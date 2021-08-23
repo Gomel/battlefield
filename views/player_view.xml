@@ -64,8 +64,8 @@
         <field name="model">battlefield.player</field>
         <field name="arch" type="xml">
             <pivot string="Players country" >
-                <field name="country" type="col"/>
-                <field name="id" type="row"/>
+                <field name="team" type="col"/>
+                <field name="country" type="row"/>
             </pivot>
         </field>
     </record>
