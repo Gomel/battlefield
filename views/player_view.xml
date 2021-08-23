@@ -130,7 +130,6 @@
                         <field name="win"/>
                         <field name="losing"/>
                         <field name="win_rate"/>
-                        <field name="color"/>
                     </group>
                 </group>
             </form>
