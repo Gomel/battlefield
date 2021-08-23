@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="battle_list_view" model="ir.ui.view">
+        <field name="name">battle.list.view</field>
+        <field name="model">battlefield.battle</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="date" />
+                <field name="arena" />
+                <field name="status" />
+                <field name="mode" />
+                <field name="winner" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="battle_form_view" model="ir.ui.view">
+        <field name="name">battle.form.view</field>
+        <field name="model">battlefield.battle</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <group>
+                        <field name="date" />
+                        <field name="arena" />
+                        <field name="status" />
+                        <field name="mode" />
+                        <field name="winner" />
+                    </group>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_battlefield_battle" model="ir.actions.act_window">
+        <field name="name">Battle</field>
+        <field name="res_model">battlefield.battle</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+</odoo>

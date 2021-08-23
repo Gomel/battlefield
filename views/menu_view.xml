@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <menuitem id="battlefield_root_menu" name ="Battle Tanks"/>
+    <menuitem id="battlefield_data_menu" parent="battlefield_root_menu" name="Data"/>
+    <menuitem id="battlefield_battle_menu" action="action_battlefield_battle" parent="battlefield_data_menu"/>
+    <menuitem id="battlefield_player_menu" action="action_battlefield_player" parent="battlefield_data_menu"/>
+    <menuitem id="battlefield_game_mode_menu" action="action_battlefield_game_mode" parent="battlefield_data_menu"/>
+    <menuitem id="battlefield_arena_menu" action="action_battlefield_arena" parent="battlefield_data_menu"/>
+    <menuitem id="battlefield_team_menu" action="action_battlefield_team" parent="battlefield_data_menu"/>
+</odoo>

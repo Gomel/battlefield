@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="arena_list_view" model="ir.ui.view">
+        <field name="name">arena.list.view</field>
+        <field name="model">battlefield.arena</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="available_modes"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="arena_form_view" model="ir.ui.view">
+        <field name="name">arena.form.view</field>
+        <field name="model">battlefield.arena</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <group>
+                        <field name="name"/>
+                    </group>
+                </group>
+                <group>
+                    <field name="available_modes" widget="many2many_checkboxes"/>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_battlefield_arena" model="ir.actions.act_window">
+        <field name="name">Arenas</field>
+        <field name="res_model">battlefield.arena</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+</odoo>

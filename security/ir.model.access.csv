@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+battlefield_battle_admin,battlefield_battle_admin,model_battlefield_battle,base.group_user,1,1,1,1
+battlefield_arena_admin,battlefield_arena_admin,model_battlefield_arena,base.group_user,1,1,1,1
+battlefield_game_mode_admin,battlefield_game_mode_admin,model_battlefield_game_mode,base.group_user,1,1,1,1
+battlefield_player_admin,battlefield_player_admin,model_battlefield_player,base.group_user,1,1,1,1
+battlefield_team_admin,battlefield_team_admin,model_battlefield_team,base.group_user,1,1,1,1

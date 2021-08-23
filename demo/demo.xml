@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data noupdate="1">
+        <!-- Team -->
+        <record id="team_1" model="battlefield.team">
+            <field name="name">Red</field>
+            <field name="color">1</field>
+        </record>
+        <record id="team_2" model="battlefield.team">
+            <field name="name">Green</field>
+            <field name="color">10</field>
+        </record>
+        <record id="team_3" model="battlefield.team">
+            <field name="name">Blue</field>
+            <field name="color">7</field>
+        </record>
+
+        <!-- Game Modes -->
+        <record id="game_mode_1" model="battlefield.game_mode">
+            <field name="name">Team Deathmatch</field>
+            <field name="rounds_count">2</field>
+            <field name="round_time">15</field>
+            <field name="point_to_win">1500</field>
+            <field name="friendly_fire">True</field>
+            <field name="bases_capture">True</field>
+        </record>
+        <record id="game_mode_2" model="battlefield.game_mode">
+            <field name="name">All for All</field>
+            <field name="rounds_count">2</field>
+            <field name="round_time">15</field>
+            <field name="point_to_win">1500</field>
+            <field name="friendly_fire">True</field>
+            <field name="bases_capture">False</field>
+        </record>
+
+        <!-- Arena -->
+        <record id="arena_1" model="battlefield.arena">
+            <field name="name">Minsk</field>
+            <field name="available_modes" eval="[ref('game_mode_1'),ref('game_mode_2')]"/>
+        </record>
+        <record id="arena_2" model="battlefield.arena">
+            <field name="name">Moscow</field>
+            <field name="available_modes" eval="[ref('game_mode_1'),ref('game_mode_2')]"/>
+        </record>
+
+        <!-- Player -->
+        <record id="player_1" model="battlefield.player">
+            <field name="name">Andrey</field>
+            <field name="country" ref="base.by"/>
+            <field name="team" ref="team_1"/>
+            <field name="win">15</field>
+            <field name="losing">10</field>
+        </record>
+        <record id="player_2" model="battlefield.player">
+            <field name="name">Anastasia</field>
+            <field name="country" ref="base.by"/>
+            <field name="team" ref="team_2"/>
+            <field name="win">27</field>
+            <field name="losing">0</field>
+        </record>
+        <record id="player_3" model="battlefield.player">
+            <field name="name">Igor</field>
+            <field name="country" ref="base.ru"/>
+            <field name="team" ref="team_3"/>
+            <field name="win">2</field>
+            <field name="losing">13</field>
+        </record>
+        <record id="player_4" model="battlefield.player">
+            <field name="name">Ivan</field>
+            <field name="country" ref="base.ru"/>
+            <field name="team" ref="team_2"/>
+            <field name="win">10</field>
+            <field name="losing">11</field>
+        </record>
+        <record id="player_5" model="battlefield.player">
+            <field name="name">Lena</field>
+            <field name="country" ref="base.ru"/>
+            <field name="team" ref="team_3"/>
+            <field name="win">26</field>
+            <field name="losing">32</field>
+        </record>
+        <record id="player_6" model="battlefield.player">
+            <field name="name">Sergei</field>
+            <field name="country" ref="base.ua"/>
+            <field name="team" ref="team_1"/>
+            <field name="win">25</field>
+            <field name="losing">42</field>
+        </record>
+        <record id="player_7" model="battlefield.player">
+            <field name="name">Maxim</field>
+            <field name="country" ref="base.ua"/>
+            <field name="team" ref="team_2"/>
+            <field name="win">35</field>
+            <field name="losing">12</field>
+        </record>
+        <record id="player_8" model="battlefield.player">
+            <field name="name">Alex</field>
+            <field name="country" ref="base.ua"/>
+            <field name="team" ref="team_3"/>
+            <field name="win">35</field>
+            <field name="losing">35</field>
+        </record>
+        <record id="player_9" model="battlefield.player">
+            <field name="name">Ioan</field>
+            <field name="country" ref="base.by"/>
+            <field name="team" ref="team_2"/>
+            <field name="win">0</field>
+            <field name="losing">12</field>
+        </record>
+        <record id="player_10" model="battlefield.player">
+            <field name="name">Felix</field>
+            <field name="country" ref="base.by"/>
+            <field name="team" ref="team_1"/>
+            <field name="win">35</field>
+            <field name="losing">70</field>
+        </record>
+    </data>
+</odoo>

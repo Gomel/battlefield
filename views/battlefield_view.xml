@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="battle_tanks_list_view" model="ir.ui.view">
+        <field name="name">battle_tanks.list.view</field>
+        <field name="model">battle_tanks.profile</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="uid" />
+                <field name="user" />
+                <field name="name" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="battle_tanks_form_view" model="ir.ui.view">
+        <field name="name">battle_tanks.form.view</field>
+        <field name="model">battle_tanks.profile</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <group>
+                       <field name="uid" />
+                        <field name="user" />
+                        <field name="name" />
+                    </group>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_battle_tanks_profile" model="ir.actions.act_window">
+        <field name="name">Battle Tanks Profile</field>
+        <field name="res_model">battle_tanks.profile</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    
+    <menuitem id="battle_tanks_root_menu" name ="Battle Tanks"/>
+    <menuitem id="battle_tanks_sub_menu" parent="battle_tanks_root_menu"
+        name="Main"/>
+    <menuitem id="battle_tanks_menu" action="action_battle_tanks_profile" parent="battle_tanks_sub_menu"/>
+</odoo>

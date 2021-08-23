@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <template id="battlefield.summary_table" name="Summary Table">
+        <t t-call="website.layout">
+            <div class="oe_structure">
+                <div class="container">
+                    <br />
+                    <center><h3>Summary Table</h3></center>
+                    <br />
+                    <table class="table-striped table">
+                        <thead style="font-size: 23px;">
+                            <tr>
+                                <h6>
+                                    <b>
+                                        <th>N</th>
+                                        <th>Name</th>
+                                        <th>Country</th>
+                                        <th>Win</th>
+                                        <th>Losing</th>
+                                        <th><b>Win rate</b></th>
+                                    </b>
+                                </h6>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <t t-set="ml_index" t-value="0"/>
+                            <t t-foreach="summary_table" t-as="player">
+                                <tr>
+                                    <t t-set="ml_index" t-value="ml_index + 1"/>
+                                    <td><span t-esc="ml_index"/></td>
+                                    <td><span t-esc="player.name"/></td>
+                                    <td><span t-esc="player.country.name"/></td>
+                                    <td><span t-esc="player.win"/></td>
+                                    <td><span t-esc="player.losing"/></td>
+                                    <td><span t-esc="player.win_rate"/></td>
+                                </tr>
+                            </t>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </t>
+
+    </template>
+
+</odoo>

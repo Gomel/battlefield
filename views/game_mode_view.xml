@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="game_mode_list_view" model="ir.ui.view">
+        <field name="name">battle.mode.view</field>
+        <field name="model">battlefield.game_mode</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="rounds_count"/>
+                <field name="round_time"/>
+                <field name="point_to_win"/>
+                <field name="friendly_fire"/>
+                <field name="bases_capture"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="game_mode_form_view" model="ir.ui.view">
+        <field name="name">game_mode.form.view</field>
+        <field name="model">battlefield.game_mode</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <group>
+                        <field name="name"/>
+                        <field name="rounds_count"/>
+                        <field name="round_time"/>
+                        <field name="point_to_win"/>
+                        <field name="friendly_fire"/>
+                        <field name="bases_capture"/>
+                    </group>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_battlefield_game_mode" model="ir.actions.act_window">
+        <field name="name">Game modes</field>
+        <field name="res_model">battlefield.game_mode</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+</odoo>
