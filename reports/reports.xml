@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Report Player-->
+    <record id="report_battlefield_player" model="ir.actions.report">
+        <field name="name">Player info</field>
+        <field name="model">battlefield.player</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">battlefield.report_player</field>
+        <field name="report_file">battlefield.report_player</field>
+        <field name="binding_model_id" ref="model_battlefield_player"/>
+        <field name="binding_type">report</field>
+    </record>
+    <template id="report_player">
+        <t t-call='web.html_container'>
+            <t t-foreach="docs" t-as="doc">
+                <h2>Player Info</h2>
+                <h4>Name: <t t-esc='doc.name'/></h4>
+                <h4>Country: <t t-esc='doc.country.name'/></h4>
+                <h4>Win: <t t-esc='doc.win'/></h4>
+                <h4>Losing: <t t-esc='doc.losing'/></h4>
+                <h4>Win rate: <t t-esc='doc.win_rate'/>%</h4>
+            </t>
+        </t>
+    </template>
+</odoo>

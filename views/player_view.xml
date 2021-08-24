@@ -116,7 +116,6 @@
         </field>
      </record>
 
-
     <record id="player_form_view" model="ir.ui.view">
         <field name="name">player.form.view</field>
         <field name="model">battlefield.player</field>

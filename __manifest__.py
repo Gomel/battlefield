@@ -16,6 +16,7 @@
         "views/player_view.xml",
         "views/arena_view.xml",
         "views/team_view.xml",
+        "reports/reports.xml",
         "views/menu_view.xml",
         "views/summary_table_view.xml"
     ],
