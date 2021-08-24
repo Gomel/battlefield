@@ -9,4 +9,4 @@
 
 ### Player form
 
-[![PlayerForm](https://github.com/Gomel/battlefield/blob/main/assets/player_form.png)]
+![PlayerForm](https://github.com/Gomel/battlefield/blob/main/assets/player_form.png)
