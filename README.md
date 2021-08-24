@@ -72,3 +72,7 @@
 ## Battle
 
 ![PlayerForm](https://github.com/Gomel/battlefield/blob/main/assets/battle_form.png)
+
+## Полезные ссылки
+
+Генератор иконок https://spilymp.github.io/ibo/
