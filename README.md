@@ -9,4 +9,4 @@
 
 ### Player form
 
-[![PlayerForm](https://github.com/Gomel/battlefield/blob/main/assets/mind_map_structure.PNG)]
+[![PlayerForm](https://github.com/Gomel/battlefield/blob/main/assets/player_form.png)]
