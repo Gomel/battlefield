@@ -114,5 +114,19 @@
             <field name="win">35</field>
             <field name="losing">70</field>
         </record>
+
+        <!-- Battle -->
+        <record id="battle_1" model="battlefield.battle">
+            <field name="arena" ref="arena_1"/>
+            <field name="status">Finish</field>
+            <field name="mode" ref="game_mode_1"/>
+            <field name="winner" ref="player_10"/>
+        </record>
+        <record id="battle_2" model="battlefield.battle">
+            <field name="arena" ref="arena_2"/>
+            <field name="status">Finish</field>
+            <field name="mode" ref="game_mode_2"/>
+            <field name="winner" ref="player_8"/>
+        </record>
     </data>
 </odoo>
