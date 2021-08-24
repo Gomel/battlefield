@@ -9,15 +9,17 @@
 
 ## Таблица результатов
 
-![SummaryTable](https://github.com/Gomel/battlefield/blob/main/assets/summary_table.png)
-
 Доступна по ссылке http://localhost:8069/summary_table
+
+![SummaryTable](https://github.com/Gomel/battlefield/blob/main/assets/summary_table.png)
 
 ## Player
 
 ### Player form
 
 ![PlayerForm](https://github.com/Gomel/battlefield/blob/main/assets/player_form.png)
+
+Поле win_rate автоматически пересчитывается при изменении win или lose
 
 ### Player list
 
