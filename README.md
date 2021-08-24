@@ -1,2 +1,5 @@
-# battlefield
-Battle tanks game management system
+# Battlefield аддон для Odoo 13
+Система управления и контироля игр "Безбашенных танков"
+###Структутра модуля
+
+
