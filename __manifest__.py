@@ -4,9 +4,9 @@
     'author': 'Petushkou Andrei',
     'summary': "Battle tanks game management system",
     'sequence': 1,
-    'description':  "Система управления играми, карта структуры системы указана в ссылке на веб сайт",
-    'category': 'Game',
-    'website': 'https://www.mindomo.com/mindmap/battlefield-070cc45e2d4542aa8552a9b603a26461',
+    'description':  "Система управления играми",
+    'category': 'Uncategorized',
+    'website': 'https://github.com/Gomel/battlefield',
     'depends': ['base', 'website'],
     'data': [
         "security/ir.model.access.csv",
