@@ -5,12 +5,10 @@ class Player(models.Model):
     _name = "battlefield.player"
 
     name = fields.Char(string="Name")
-#    date = fields.Date(string="Registration date")
     country = fields.Many2one('res.country', string="Country")
     team = fields.Many2one('battlefield.team', string="Team")
     win = fields.Integer(string="Win")
     losing = fields.Integer(string="Lose")
-    # games_played = fields.Integer(compute='_compute_win_rate', string="Games played")
     win_rate = fields.Float(compute='_compute_win_rate', string="Win rate", digits=(5, 2))
     color = fields.Integer(related='team.color', string="Team color", readonly=True)
 
